@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: order-service
+
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/DBOne
+    username: userone
+    password: pwone
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 9091
